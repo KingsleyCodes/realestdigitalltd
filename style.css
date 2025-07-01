@@ -1,0 +1,115 @@
+/*
+    Custom CSS for RealestDigital LTD Website.
+    This file contains styles that are not directly handled by Tailwind CSS
+    or are custom overrides for specific elements.
+*/
+
+body {
+    font-family: 'Inter', sans-serif; /* Applies the Inter font to the entire body */
+    scroll-behavior: smooth; /* Enables smooth scrolling when navigating to anchor links */
+}
+
+/* Custom styles for the hero section background image */
+.hero-background {
+    background-image: url('images/blg-1.jpg');
+    background-size: cover; /* Ensures the background image covers the entire element */
+    background-position: center; /* Centers the background image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    
+}
+
+/* Custom styles for service card icons */
+.service-icon {
+    font-size: 3rem; /* Makes the icons larger */
+    color: #f07b06; /* Sets the icon color to a shade of indigo */
+}
+
+/* Loading Spinner Styles */
+#loading-overlay {
+    position: fixed; /* Fixes the overlay to the viewport */
+    top: 0;
+    left: 0;
+    width: 100%; /* Covers the entire width */
+    height: 100%; /* Covers the entire height */
+    background-color: rgba(255, 255, 255, 0.95); /* Semi-transparent white background */
+    display: flex; /* Uses flexbox for centering content */
+    justify-content: center; /* Centers horizontally */
+    align-items: center; /* Centers vertically */
+    z-index: 9999; /* Ensures it's on top of all other content */
+    transition: opacity 0.5s ease-out, visibility 0.5s ease-out; /* Smooth transition for fade-out and visibility */
+}
+
+#loading-overlay.hidden-loader {
+    opacity: 0; /* Makes the overlay transparent */
+    visibility: hidden; /* Hides the element from screen readers and interaction */
+    pointer-events: none; /* Allows clicks to pass through once hidden */
+}
+
+.spinner {
+    border: 8px solid #f3f3f3; /* Light gray border */
+    border-top: 8px solid #f07b06; /* Indigo border for the top part */
+    border-radius: 50%; /* Makes it a perfect circle */
+    width: 60px; /* Width of the spinner */
+    height: 60px; /* Height of the spinner */
+    animation: spin 1s linear infinite; /* Applies the 'spin' animation */
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); } /* Starts at 0 degrees rotation */
+    100% { transform: rotate(360deg); } /* Rotates 360 degrees */
+}
+
+/* Back to Top Button Styles */
+#back-to-top {
+    position: fixed; /* Fixed position relative to the viewport */
+    bottom: 20px; /* 20px from the bottom */
+    right: 20px; /* 20px from the right */
+    background-color: #f07b06; /* Indigo background */
+    color: white; /* White text/icon */
+    padding: 1rem; /* Padding around the icon */
+    border-radius: 50%; /* Makes it circular */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Soft shadow */
+    display: flex; /* Flexbox for centering icon */
+    justify-content: center;
+    align-items: center;
+    cursor: pointer; /* Indicates it's clickable */
+    opacity: 0; /* Hidden by default */
+    visibility: hidden; /* Hidden from screen readers */
+    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out; /* Smooth fade in/out */
+    z-index: 1000; /* Ensures it's above most content */
+}
+
+#back-to-top.show {
+    opacity: 1; /* Fully visible */
+    visibility: visible; /* Visible to screen readers */
+}
+
+/* Scroll Reveal Animations */
+.animate-on-scroll {
+    opacity: 0; /* Hidden by default */
+    transform: translateY(20px); /* Slightly moved down */
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out; /* Smooth transition */
+}
+
+.animate-on-scroll.animate-visible {
+    opacity: 1; /* Fully visible */
+    transform: translateY(0); /* Original position */
+}
+
+/* Testimonial Carousel */
+.testimonial-carousel {
+    position: relative;
+    overflow: hidden; /* Hides extra testimonials */
+}
+
+.testimonial-slides-container {
+    display: flex; /* Arranges slides in a row */
+    transition: transform 0.5s ease-in-out; /* Smooth slide transition */
+}
+
+.testimonial-slide {
+    flex: 0 0 100%; /* Each slide takes 100% width */
+    padding: 2rem;
+    text-align: center;
+    box-sizing: border-box; /* Include padding in width calculation */
+}

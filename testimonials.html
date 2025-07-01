@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RealestDigital LTD - Grow Your Business Online</title>
+    <title>Testimonials - RealestDigital LTD</title>
     <!--
         This meta tag ensures the website is responsive and scales correctly on all devices.
         'width=device-width' sets the width of the viewport to the device's width.
@@ -133,56 +133,49 @@
         </div>
     </header>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero-background bg-indigo-700 text-white py-20 md:py-32 lg:py-40 flex items-center justify-center text-center rounded-b-lg animate-on-scroll">
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-16 md:py-24 bg-indigo-50 text-gray-800 rounded-lg mx-4 md:mx-8 lg:mx-16 my-8 shadow-lg animate-on-scroll">
         <!--
-            The hero section is the first thing users see.
-            'hero-background' applies the custom background image.
-            'bg-indigo-700' provides a fallback background color.
-            'text-white' sets text color to white.
-            'py-...' adds generous vertical padding for a spacious feel.
-            'flex items-center justify-center text-center' centers content both horizontally and vertically.
-            'rounded-b-lg' adds rounded corners to the bottom.
-            Added 'animate-on-scroll' for scroll reveal effect.
+            New section for testimonials.
+            'bg-indigo-50' for a very light indigo background.
+            'animate-on-scroll' for scroll reveal effect.
         -->
-        <div class="container mx-auto px-6 max-w-4xl">
-            <!-- Container for hero content, with max-width for readability -->
-            <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight mb-6 drop-shadow-lg">
-                <!--
-                    Main heading of the hero section.
-                    'text-4xl md:text-5xl lg:text-6xl' makes the font size responsive.
-                    'font-extrabold' for extra bold text.
-                    'leading-tight' reduces line height for a compact look.
-                    'mb-6' adds bottom margin.
-                    'drop-shadow-lg' adds a large text shadow for better contrast.
-                -->
-                Grow Your Business with RealestDigital LTD
-            </h1>
-            <p class="text-lg md:text-xl mb-8 opacity-90 leading-relaxed">
-                <!--
-                    Subtitle/description.
-                    'text-lg md:text-xl' makes font size responsive.
-                    'mb-8' adds bottom margin.
-                    'opacity-90' makes it slightly transparent.
-                    'leading-relaxed' increases line height for readability.
-                -->
-                We specialize in paid advertising and cutting-edge website development to help your brand thrive online.
-            </p>
-            <a href="services.html" class="bg-white text-indigo-700 hover:bg-indigo-100 px-8 py-4 rounded-full text-lg font-semibold shadow-lg transition duration-300 transform hover:scale-105 inline-block">
-                <!--
-                    Call-to-action button. Now links to the services.html page.
-                    'bg-white text-indigo-700' for white background and indigo text.
-                    'hover:bg-indigo-100' for a light indigo background on hover.
-                    'px-8 py-4' adds padding.
-                    'rounded-full' makes it fully rounded.
-                    'text-lg font-semibold' sets font size and weight.
-                    'shadow-lg' adds a large shadow.
-                    'transition duration-300 transform hover:scale-105' adds a smooth
-                    scale-up effect on hover.
-                    'inline-block' allows transform to apply correctly.
-                -->
-                Explore Our Services
-            </a>
+        <div class="container mx-auto px-6 text-center max-w-4xl">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-12">What Our Clients Say</h2>
+
+            <div class="testimonial-carousel relative">
+                <div class="testimonial-slides-container" id="testimonial-slides-container">
+                    <!-- Testimonial Slide 1 -->
+                    <div class="testimonial-slide bg-white p-8 rounded-xl shadow-md flex flex-col items-center justify-center">
+                        <p class="text-lg md:text-xl italic text-gray-700 mb-6">
+                            "RealestDigital LTD transformed our online presence! Their paid ad campaigns brought immediate results, and our new website is simply stunning and highly effective."
+                        </p>
+                        <p class="font-semibold text-indigo-700">- Jane Doe, CEO of Tech Innovations</p>
+                    </div>
+                    <!-- Testimonial Slide 2 -->
+                    <div class="testimonial-slide bg-white p-8 rounded-xl shadow-md flex flex-col items-center justify-center">
+                        <p class="text-lg md:text-xl italic text-gray-700 mb-6">
+                            "The team at RealestDigital built us a fantastic e-commerce site. Their attention to detail and commitment to our success was exceptional. Highly recommend!"
+                        </p>
+                        <p class="font-semibold text-indigo-700">- John Smith, Founder of Artisan Crafts</p>
+                    </div>
+                    <!-- Testimonial Slide 3 -->
+                    <div class="testimonial-slide bg-white p-8 rounded-xl shadow-md flex flex-col items-center justify-center">
+                        <p class="text-lg md:text-xl italic text-gray-700 mb-6">
+                            "Our SEO rankings have never been better since partnering with RealestDigital. They truly understand digital marketing and deliver on their promises."
+                        </p>
+                        <p class="font-semibold text-indigo-700">- Emily White, Marketing Director at Global Solutions</p>
+                    </div>
+                </div>
+
+                <!-- Carousel Navigation Buttons -->
+                <button id="prev-testimonial" class="absolute top-1/2 left-4 -translate-y-1/2 bg-indigo-700 text-white p-3 rounded-full shadow-lg hover:bg-indigo-800 transition-colors duration-300 focus:outline-none">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <button id="next-testimonial" class="absolute top-1/2 right-4 -translate-y-1/2 bg-indigo-700 text-white p-3 rounded-full shadow-lg hover:bg-indigo-800 transition-colors duration-300 focus:outline-none">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
         </div>
     </section>
 

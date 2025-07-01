@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RealestDigital LTD - Grow Your Business Online</title>
+    <title>Contact Us - RealestDigital LTD</title>
     <!--
         This meta tag ensures the website is responsive and scales correctly on all devices.
         'width=device-width' sets the width of the viewport to the device's width.
@@ -133,56 +133,55 @@
         </div>
     </header>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero-background bg-indigo-700 text-white py-20 md:py-32 lg:py-40 flex items-center justify-center text-center rounded-b-lg animate-on-scroll">
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 md:py-24 bg-indigo-700 text-white rounded-lg mx-4 md:mx-8 lg:mx-16 my-8 shadow-lg animate-on-scroll">
         <!--
-            The hero section is the first thing users see.
-            'hero-background' applies the custom background image.
-            'bg-indigo-700' provides a fallback background color.
-            'text-white' sets text color to white.
-            'py-...' adds generous vertical padding for a spacious feel.
-            'flex items-center justify-center text-center' centers content both horizontally and vertically.
-            'rounded-b-lg' adds rounded corners to the bottom.
+            Contact section, with an indigo background to stand out.
             Added 'animate-on-scroll' for scroll reveal effect.
         -->
-        <div class="container mx-auto px-6 max-w-4xl">
-            <!-- Container for hero content, with max-width for readability -->
-            <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight mb-6 drop-shadow-lg">
-                <!--
-                    Main heading of the hero section.
-                    'text-4xl md:text-5xl lg:text-6xl' makes the font size responsive.
-                    'font-extrabold' for extra bold text.
-                    'leading-tight' reduces line height for a compact look.
-                    'mb-6' adds bottom margin.
-                    'drop-shadow-lg' adds a large text shadow for better contrast.
-                -->
-                Grow Your Business with RealestDigital LTD
-            </h1>
-            <p class="text-lg md:text-xl mb-8 opacity-90 leading-relaxed">
-                <!--
-                    Subtitle/description.
-                    'text-lg md:text-xl' makes font size responsive.
-                    'mb-8' adds bottom margin.
-                    'opacity-90' makes it slightly transparent.
-                    'leading-relaxed' increases line height for readability.
-                -->
-                We specialize in paid advertising and cutting-edge website development to help your brand thrive online.
+        <div class="container mx-auto px-6 text-center max-w-2xl">
+            <h2 class="text-3xl md:text-4xl font-bold mb-8">Get in Touch</h2>
+            <p class="text-lg leading-relaxed mb-8 opacity-90">
+                Ready to take your business to the next level? Contact RealestDigital LTD today for a free consultation!
             </p>
-            <a href="services.html" class="bg-white text-indigo-700 hover:bg-indigo-100 px-8 py-4 rounded-full text-lg font-semibold shadow-lg transition duration-300 transform hover:scale-105 inline-block">
-                <!--
-                    Call-to-action button. Now links to the services.html page.
-                    'bg-white text-indigo-700' for white background and indigo text.
-                    'hover:bg-indigo-100' for a light indigo background on hover.
-                    'px-8 py-4' adds padding.
-                    'rounded-full' makes it fully rounded.
-                    'text-lg font-semibold' sets font size and weight.
-                    'shadow-lg' adds a large shadow.
-                    'transition duration-300 transform hover:scale-105' adds a smooth
-                    scale-up effect on hover.
-                    'inline-block' allows transform to apply correctly.
-                -->
-                Explore Our Services
-            </a>
+            <div class="space-y-4 md:space-y-0 md:flex md:justify-center md:space-x-8 mb-12">
+                <!-- Contact information block -->
+                <div>
+                    <i class="fas fa-envelope text-3xl mb-2"></i>
+                    <p class="text-lg font-semibold">info@realestdigital.com</p>
+                </div>
+                <div>
+                    <i class="fas fa-phone-alt text-3xl mb-2"></i>
+                    <p class="text-lg font-semibold">+234 801 234 5678</p>
+                </div>
+                <div>
+                    <i class="fas fa-map-marker-alt text-3xl mb-2"></i>
+                    <p class="text-lg font-semibold">Abuja, FCT, Nigeria</p>
+                </div>
+            </div>
+
+            <!-- Contact Form -->
+            <form id="contact-form" class="bg-white p-8 rounded-xl shadow-lg text-gray-800 max-w-lg mx-auto">
+                <div class="mb-6 text-left">
+                    <label for="name" class="block text-gray-700 text-sm font-bold mb-2">Name:</label>
+                    <input type="text" id="name" name="name" class="shadow appearance-none border rounded w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-indigo-500 rounded-md" placeholder="Your Name">
+                    <p id="name-error" class="text-red-500 text-xs italic mt-1 hidden"></p>
+                </div>
+                <div class="mb-6 text-left">
+                    <label for="email" class="block text-gray-700 text-sm font-bold mb-2">Email:</label>
+                    <input type="email" id="email" name="email" class="shadow appearance-none border rounded w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-indigo-500 rounded-md" placeholder="your@email.com">
+                    <p id="email-error" class="text-red-500 text-xs italic mt-1 hidden"></p>
+                </div>
+                <div class="mb-6 text-left">
+                    <label for="message" class="block text-gray-700 text-sm font-bold mb-2">Message:</label>
+                    <textarea id="message" name="message" rows="5" class="shadow appearance-none border rounded w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-indigo-500 rounded-md" placeholder="Tell us about your project..."></textarea>
+                    <p id="message-error" class="text-red-500 text-xs italic mt-1 hidden"></p>
+                </div>
+                <button type="submit" class="bg-indigo-700 text-white hover:bg-indigo-800 px-8 py-4 rounded-full text-lg font-semibold shadow-lg transition duration-300 transform hover:scale-105">
+                    Send Message
+                </button>
+                <p id="form-success-message" class="text-green-600 text-sm mt-4 hidden">Your message has been sent!</p>
+            </form>
         </div>
     </section>
 
